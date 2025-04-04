@@ -1,0 +1,1667 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+  color: #43291F;
+  text-align: center;
+  font-size: 30px;
+}
+
+.header-login {
+    color: #43291F;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 290px;
+    left: 765px;
+    z-index: 3;
+}
+
+.header-register {
+  color: #43291F;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 300px;
+  left: 740px;
+  z-index: 3;
+}
+
+
+.header-index {
+  color: #43291F;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  z-index: 3;
+  background-color: antiquewhite;
+  width: 875px;
+  height: 70px;
+  padding: 18px 10px;
+  margin: 0px 8px;
+  position: absolute;
+  left: 750px;
+  top: 500px;
+}
+
+.header-index h1{
+  color: #43291F;
+  text-align: center;
+  top: 1px;
+  left: 40px;
+  position: absolute;
+}
+
+
+.topnav{
+    background-color:#F1DABF ;
+    overflow: hidden;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-style: solid ;
+    border-width: 5px;
+    border-color: #43291F;
+}
+
+li {
+    float: right;
+    background-color:#F1DABF ;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: #43291F;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+  background-color: rgb(238, 163, 64);
+}
+
+.topnav a.active{
+  background-color: rgb(234, 145, 28);
+}
+.itemgroup{
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#basketIcon{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(58, 29, 5) ;
+    text-align: center;
+    color: white;
+  }
+
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+ 
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .login-box
+  {
+    background-color: #F1DABF;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #43291F;
+    width: 400px;
+    height: 450px;
+    left: 650px;
+    top: 300px;
+    border-radius: 25px;
+    position: absolute;
+    text-align: center;
+  }
+
+  .login-box .elabel{
+    font-family: 'Courier New', Courier, monospace;
+    color: #43291F;
+    font-size: 30px;
+    font-weight: bold;
+    top: 100px;
+    position: relative;
+    text-align: center;
+  }
+
+  .login-box .email{
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px lightgray;
+    top: 110px;
+    position: relative;
+  }
+
+  .login-box .plabel{
+    font-family: 'Courier New', Courier, monospace;
+    color: #43291F;
+    font-size: 30px;
+    font-weight: bold;
+    top: 120px;
+    position: relative;
+    text-align: center;
+  }
+
+  .login-box .password{
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px lightgray;
+    top: 140px;
+    position: relative;
+    
+  }
+
+  .login-box .login{
+    text-decoration: none;
+    width: 40%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    color: #43291F;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    background-color: antiquewhite;
+    height: 15%;
+    opacity: 0.8;
+    box-shadow: 2px 2px lightgray;
+    padding: 6px 10px;
+    margin: 4px 0;
+    top: 150px;
+    position: relative;
+    text-align: center;
+    
+
+  }
+  .login-box .login:hover{
+    text-decoration: none;
+    background-color: rgb(238, 163, 64);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    color: #43291F;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 40%;
+    height: 15%;
+    opacity: 0.8;
+    box-shadow: 2px 2px lightslategray;
+    padding: 6px 10px;
+    margin: 4px 0;
+    top: 150px;
+    position: relative;
+    text-align: center;
+
+  }
+  .login-box a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #330F0A;
+    top: 170px;
+    position: relative;
+    text-align: center;
+  }
+  .login-box a:hover{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #d2230c;
+    top: 170px;
+    position: relative;
+    text-align: center;
+  }
+
+
+  .image-box{
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #43291F;
+    width: 100px;
+    height: 100px;
+    left: 800px;
+    top: 230px;
+    
+    border-radius: 55px;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .login-page{
+    background-image: url(img/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  .register-page{
+    background-image: url(img/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .register-box{
+    background-color: #F1DABF;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #43291F;
+    width: 450px;
+    height: 550px;
+    left: 630px;
+    top: 300px;
+    border-radius: 25px;
+    position: absolute;
+    text-align: center;
+  }
+
+  .register-box .elabel{
+    font-family: 'Courier New', Courier, monospace;
+    color: #43291F;
+    font-size: 20px;
+    font-weight: bold;
+    top: 110px;
+    position: relative;
+    text-align: center;
+  }
+
+  .register-box .email{
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px lightgray;
+    top: 110px;
+    position: relative;
+  }
+  .register-box .ulabel{
+    font-family: 'Courier New', Courier, monospace;
+    color: #43291F;
+    font-size: 20px;
+    font-weight: bold;
+    top: 110px;
+    position: relative;
+    text-align: center;
+  }
+
+  .register-box .username{
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px lightgray;
+    top: 110px;
+    position: relative;
+  }
+  .register-box .plabel{
+    font-family: 'Courier New', Courier, monospace;
+    color: #43291F;
+    font-size: 20px;
+    font-weight: bold;
+    top: 110px;
+    position: relative;
+    text-align: center;
+  }
+
+  .register-box .password{
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px lightgray;
+    top: 110px;
+    position: relative;
+  }
+  .register-box .clabel{
+    font-family: 'Courier New', Courier, monospace;
+    color: #43291F;
+    font-size: 20px;
+    font-weight: bold;
+    top: 110px;
+    position: relative;
+    text-align: center;
+  }
+
+  .register-box .confirm{
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px lightgray;
+    top: 110px;
+    position: relative;
+  }
+
+  .register-box .register{
+    text-decoration: none;
+    width: 40%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    color: #43291F;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    background-color: antiquewhite;
+    height: 15%;
+    opacity: 0.8;
+    box-shadow: 2px 2px lightgray;
+    padding: 6px 10px;
+    margin: 4px 0;
+    top: 120px;
+    position: relative;
+    text-align: center;
+    
+
+  }
+  .register-box .register:hover{
+    text-decoration: none;
+    background-color: rgb(238, 163, 64);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #43291F;
+    color: #43291F;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 40%;
+    height: 15%;
+    opacity: 0.8;
+    box-shadow: 2px 2px lightslategray;
+    padding: 6px 10px;
+    margin: 4px 0;
+    top: 120px;
+    position: relative;
+    text-align: center;
+
+  }
+  .register-box a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #330F0A;
+    top: 150px;
+    position: relative;
+    text-align: center;
+  }
+  .register-box a:hover{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #d2230c;
+    top: 150px;
+    position: relative;
+    text-align: center;
+  }
+
+  .index-image img{
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+
+  }
+
+.index-page h2{
+  position: relative;
+  top: 650px;
+  text-align: center;
+  color: #43291F;
+  font-size: 30px;
+}
+.index-page h3{
+  position: relative;
+  top: 650px;
+  text-align: center;
+  color: #43291F;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.filter{
+  position: relative;
+  border-top-style: solid;
+  border-top-color: #330F0A;
+  top: 800px;
+  height: 70px;
+  
+}
+
+.filter input{
+  width:19%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+
+
+}
+.filter input:hover{
+  width: 19%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 18px;
+  font-weight: bold;
+
+}
+.clear{
+  position: relative;
+ 
+  top: 800px;
+}
+
+.clear .btn{
+  width:50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 400px;
+  font-weight: bold;
+}
+
+.clear .btn:hover{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 390px;
+  font-weight: bold;
+
+
+}
+
+
+.products{
+  position: relative;
+  top: 800px;
+ 
+}
+.products img{
+  box-sizing: border-box;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-color: #43291F;
+  border-style: solid;
+  left: 20px;
+  position: relative;
+  top: 40px;
+}
+.products a button{
+  width:12%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  right: 20px;
+  text-decoration: none;
+  float: right;
+  bottom: 50px;
+  font-weight: bold;
+
+}
+.products a button:hover{
+  width:12%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  right: 22px;
+  text-decoration: none;
+  float: right;
+  bottom: 50px;
+  font-weight: bold;
+  
+
+}
+
+.products input{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+
+}
+
+.products input:hover{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 18px;
+  font-weight: bold;
+
+}
+.products .vals{
+  background-color: #F1DABF;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+  opacity: 0.9;
+  position: relative;
+}
+
+.products p{
+  left: 350px;
+  position: relative;
+  bottom: 300px;
+  max-width: 800px;
+  font-size: 20px;
+}
+
+.basket-page button{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #F1DABF;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.basket-page button:hover{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+
+
+.arow th{
+  position: relative;
+  color: #330F0A;
+  text-decoration: underline;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin: 8px 0;
+ 
+}
+.basket-page table{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 5px;
+  border-color: #43291F;
+  width: 100%;
+}
+.basket-page table th{
+  position: relative;
+  color: #330F0A;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.basket-page table img{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 2px;
+  border-color: #43291F;
+}
+
+.basket-page table #increment{
+  color: #330F0A;
+  font-weight: bold;
+  font-size: 30px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.basket-page table #increment:hover{
+  color: green;
+  font-weight: bold;
+  font-size: 30px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.basket-page table #decrement{
+  color: #330F0A;
+  font-weight: bold;
+  font-size: 30px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.basket-page table #decrement:hover{
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.basket-page .header h2{
+  font-size: 20px;
+}
+
+.information-page img{
+
+    box-sizing: border-box;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-color: #43291F;
+    border-style: solid;
+    left: 20px;
+    position: relative;
+    top: 40px;
+
+}
+
+.information-page p{
+  left: 350px;
+  position: relative;
+  bottom: 300px;
+  max-width: 800px;
+  font-size: 20px;
+}
+
+.information-page button{
+  width:20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #F1DABF;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+
+.information-page button:hover{
+  width:20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+
+.checkout-page select{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 500px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+
+}
+
+.checkout-page input{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 500px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.checkout-page #complete{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #F1DABF;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 720px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.checkout-page #complete:hover{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 720px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+
+
+ 
+
+.checkout-page table{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 5px;
+  border-color: #43291F;
+  width: 100%;
+}
+.checkout-page table th{
+  position: relative;
+  color: #330F0A;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.checkout-page table img{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 2px;
+  border-color: #43291F;
+}
+
+
+.checkout-page h1{
+  color: #43291F;
+  text-align: center;
+  font-size: 20px;
+}
+
+.checkout-page label{
+  color: #43291F;
+  font-size: 30px;
+  left: 20px;
+  position: relative;
+  text-align: center;
+  left: 750px;
+  font-weight: bold;
+}
+
+.ticket{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 2px;
+  border-color: #43291F;
+  width: 50%;
+  position: relative;
+  left: 400px;
+}
+
+.ticket p{
+  color: #43291F;
+  font-size: 20px;
+  left: 20px;
+  position: relative;
+  text-align: center;
+
+}
+
+.ticket .orderNum{
+  color: #43291F;
+  font-size: 20px;
+  left: 20px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.account-page h2{
+  color: #43291F;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+
+.account-page p{
+  color: #43291F;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+
+}
+
+.admin-page h2{
+  color: #43291F;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.product{
+  position: relative;
+ 
+}
+.product img{
+  box-sizing: border-box;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-color: #43291F;
+  border-style: solid;
+  left: 20px;
+  position: relative;
+  top: 20px;
+}
+
+
+.product input{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+
+}
+
+.product input:hover{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 18px;
+  font-weight: bold;
+
+}
+.product .vals{
+  background-color: #F1DABF;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+  opacity: 0.9;
+  position: relative;
+}
+
+.product p{
+  left: 350px;
+  position: relative;
+  bottom: 310px;
+  max-width: 800px;
+  font-size: 20px;
+}
+
+.product a button{
+  width: 32%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  right: 20px;
+  text-decoration: none;
+  float: right;
+  bottom: 80px;
+  font-weight: bold;
+
+}
+.product a button:hover{
+  width:32%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  right: 22px;
+  text-decoration: none;
+  float: right;
+  bottom: 80px;
+  font-weight: bold;
+  
+
+}
+
+.orders{
+  position: relative;
+ 
+}
+
+
+.orders input{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+
+}
+
+.orders input:hover{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 18px;
+  font-weight: bold;
+
+}
+.orders .vals{
+  background-color: #F1DABF;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+  opacity: 0.9;
+  position: relative;
+}
+
+.orders p{
+  left: 20px;
+  position: relative;
+  max-width: 800px;
+  font-size: 20px;
+}
+
+.orders a button{
+  width: 32%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  right: 20px;
+  text-decoration: none;
+  float: right;
+  bottom: 80px;
+  font-weight: bold;
+
+}
+.orders a button:hover{
+  width:32%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  right: 22px;
+  text-decoration: none;
+  float: right;
+  bottom: 80px;
+  font-weight: bold;
+  
+
+}
+
+.admin-page .addProduct{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+.admin-page .addProduct:hover{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #43291F;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+
+  text-decoration: none;
+
+  font-weight: bold;
+  
+
+}
+
+
+
+.order-edit input{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 500px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.order-edit #complete{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #F1DABF;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 720px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.order-edit #complete:hover{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 720px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+
+
+
+.order-edit p{
+  color: #43291F;
+  text-align: center;
+  font-size: 20px;
+}
+
+.order-edit label{
+  color: #43291F;
+  font-size: 30px;
+  left: 20px;
+  position: relative;
+  text-align: center;
+  left: 750px;
+  font-weight: bold;
+}
+
+
+
+
+.product-edit input{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 500px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.product-edit #complete{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #F1DABF;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 720px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.product-edit #complete:hover{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 720px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+
+.product-edit #desc{
+  width:40%;
+  height: 200px;
+  padding: 12px 20px;
+  
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 500px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+  max-width: 40%;
+}
+
+.product-edit p{
+  color: #43291F;
+  text-align: center;
+  font-size: 20px;
+}
+
+.product-edit label{
+  color: #43291F;
+  font-size: 30px;
+  left: 20px;
+  position: relative;
+  text-align: center;
+  left: 750px;
+  font-weight: bold;
+}
+
+
+
+.direct-page h2{
+  color: #43291F;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+
+.direct-page p{
+  color: #43291F;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.continue{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #F1DABF;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 800px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+  top: 20px;
+}
+.continue:hover{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 780px;
+  text-decoration: none;
+  font-weight: bold;
+  top: 20px;
+  text-decoration: underline;
+
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+
+
+
+.product-add input{
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 500px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.product-add #complete{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #F1DABF;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 720px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+.product-add #complete:hover{
+  width:15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 163, 64);
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightslategray;
+  position: relative;
+  left: 720px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+}
+
+.product-add #desc{
+  width:40%;
+  height: 200px;
+  padding: 12px 20px;
+  
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border-color: #43291F;
+  text-align: center;
+  box-shadow: 2px 2px lightgray;
+  position: relative;
+  left: 500px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #43291F;
+  max-width: 40%;
+}
+
+.product-add p{
+  color: #43291F;
+  text-align: center;
+  font-size: 20px;
+}
+
+.product-add label{
+  color: #43291F;
+  font-size: 30px;
+  left: 20px;
+  position: relative;
+  text-align: center;
+  left: 650px;
+  font-weight: bold;
+}
