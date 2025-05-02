@@ -44,6 +44,9 @@
                 if(!$conn){
                     echo'database failed to connect';
                 }
+                else{
+                    echo'this is connected';
+                }
 
         $query = $db->connect()->prepare("SELECT * FROM tblProduct");
         $query->execute();
