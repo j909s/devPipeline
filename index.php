@@ -40,6 +40,10 @@
     
     if(!isset($_POST['']))
     {
+        $conn = $db->connect();
+                if(!$conn){
+                    echo'database failed to connect';
+                }
 
         $query = $db->connect()->prepare("SELECT * FROM tblProduct");
         $query->execute();
@@ -62,7 +66,7 @@
     if(isset($_POST['all']))
     {
         $filter = 'all';
-        echo 'All products';
+        
 
         $query = $db->connect()->prepare("SELECT * FROM tblProduct");
         $query->execute();
