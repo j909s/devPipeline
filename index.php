@@ -40,13 +40,6 @@
     
     if(!isset($_POST['']))
     {
-        $conn = $db->connect();
-                if(!$conn){
-                    echo'database failed to connect';
-                }
-                else{
-                    echo'this is connected';
-                }
 
         $query = $db->connect()->prepare("SELECT * FROM tblProduct");
         $query->execute();
@@ -69,7 +62,7 @@
     if(isset($_POST['all']))
     {
         $filter = 'all';
-        
+        echo 'All products';
 
         $query = $db->connect()->prepare("SELECT * FROM tblProduct");
         $query->execute();
@@ -214,7 +207,7 @@
             </form>
             <div class="products">
                 <? foreach ($products as $p): ?>
-                    <img src="<?= $p->image()?>"  width="260px", height="320px" alt="Light Brew Image">
+                    <img src="<?= $p->image()?>"  width="260px", height="320px" >
                     <p>Product Name: <?= $p->name() ?></p>
                     <p>Product Price: <?= $p->price() ?></p>
                     <p>Product Description: <?= $p->description() ?></p>
